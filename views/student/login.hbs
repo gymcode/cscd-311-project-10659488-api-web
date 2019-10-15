@@ -1,0 +1,36 @@
+
+<style>
+    #inputs{
+        margin-left: 17%;
+        border-top: none; 
+        border-left: none;  
+        border-right: none; 
+        border-color: rgba(228, 194, 194, 0.856); 
+        width:60%;
+    }
+    #labels{
+        margin-left: 17%;
+    }
+    
+</style>
+
+<div class="box">
+    <h3 style="margin-left: 31%; letter-spacing:3px"><img src="images/login.png">{{viewTitle}}</h3>
+    <br>
+
+    <form action="/studentLogin" method="POST" autocomplete="off">
+        <div class="form-group">
+            <label for="ID_num" id="labels">Student Name</label>
+            <input type="text" class="form-control form-control-sm" placeholder="Student Name" name="name" id="inputs" required>
+    </div>
+    <div class="from-group">
+            <label for="password" id="labels">Student Pin</label>
+            <input type="password" class="form-control form-control-sm" placeholder="Student Pin" name="password" id="inputs" required>
+    </div><br>
+    <div class="form-group">
+        <button type="submit" style="margin-left: 30%; width:40%;   border-radius: 15px 50px 30px;" class="btn btn-primary">Submit</button><br>
+        <p><a href="/studentRegister" style="margin-left: 22%; text-decoration: none;color: #8a9199dc;">Don't have an account please sign up here</a></p>
+    </div>
+    </form>
+</div>
+

@@ -1,0 +1,208 @@
+ <div style="display: flex; justify-content: center; align-items: center;">
+         <a href="/logout" style="background-color: green; text-decoration: none; color:#fff; padding: 5px; margin-top: 10px; ">LOGOUT</a>
+</div>
+<h3>{{viewTitle}}</h3>
+
+<form action="/studentHall" method="POST">
+    <div class="row" >
+        <div class="col-md-6">
+           <label for="hall">Hall</label>
+            <select class="form-control" name="hall" id="" >
+                <option value="h1" disabled>Select Hall</option>
+                <option value="Legon Hall" >Legon Hall</option>
+                <option value="CommonWealth Hall" >CommonWealth Hall</option>
+                <option value="Volta Hall" >Volta Hall</option>
+                <option value="h5" >CommonWealth Hall</option>
+                <option value="Bani Hall" >Bani Hall</option>
+                <option value="Evandy Hall" >Evandy Hall</option>
+                <option value="African Union Hall" >African Union Hall</option>
+                <option value="Limman Hall" >Limman Hall</option>
+                <option value="Elisabeth sey Hall" >Elisabeth sey Hall</option>
+                <option value="Kwapong Hall" >Kwapong Hall</option>
+                <option value="TF Hall" >TF Hall</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+             <label for="rooms">Rooms </label>
+                <select class="form-control" name="rooms" id="">
+                    <option value="r1" disabled>Select Room</option>
+                    <option value="RA200" >RA200</option>
+                    <option value="RA201" >RA201</option>
+                    <option value="RA202" >RA202</option>
+                    <option value="RA203" >RA203</option>
+                    <option value="RA204" >RA204</option>
+                    <option value="RA205" >RA205</option>
+                    <option value="RA206" >RA206</option>
+                    <option value="RA207" >RA207</option>
+                    <option value="RA208" >RA208</option>
+                    <option value="RA209" >RA209</option>
+                    <option value="RA210" >RA210</option>
+                    <option value="RA211" >RA211</option>
+                    <option value="RA212" >RA212</option>
+                    <option value="RA213" >RA213</option>
+                    <option value="RA214" >RA214</option>
+                    <option value="RA215" >RA215</option>
+
+                </select>
+        </div> 
+    </div>
+    </div><br>
+
+    
+    <button type="submit" style="margin-left: 40%; width:20%;   border-radius: 15px 50px 30px;" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{!--         
+    <div class="row">
+        <div class="col-md-4">
+            <input type="radio"  name="Lhall">Legon Hall <br>
+            <select name="room_"  id="">
+                <option value="r1" disabled>Select Room#</option>
+                <option value="r2" >Room 1</option>
+                <option value="r3" >Room 2</option>
+                <option value="r4" >Room 3</option>
+                <option value="r5" >Room 4</option>
+                <option value="r6" >Room 5</option>
+                <option value="r7" >Room 6</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+             <input type="radio" name="CWhall">CommonWealth Hall <br>
+             <select name="rooms"  id="">
+               <option value="r8" disabled>Select Room#</option>
+                <option value="r9" >Room 001</option>
+                <option value="r10" >Room 002</option>
+                <option value="r11" >Room 003</option>
+                <option value="r12" >Room 004</option>
+                <option value="r13" >Room 005</option>
+                <option value="r14" >Room 006</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+             <input type="radio" name="Vhall">Volta Hall <br>
+             <select name="rooms"  id="">
+               <option value="r1" disabled>Select Room#</option>
+                <option value="r2" >R 100</option>
+                <option value="r3" >R 200</option>
+                <option value="r4" >R 300</option>
+                <option value="r5" >R 400</option>
+                <option value="r6" >R 500</option>
+                <option value="r7" >R 600</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+             <input type="radio" name="AUhall">African Union Hall <br>
+             <select name="rooms"  id="">
+               <option value="r1" disabled>Select Room#</option>
+                <option value="r2" >RA200</option>
+                <option value="r3" >RA201</option>
+                <option value="r4" >RA202</option>
+                <option value="r5" >RA203</option>
+                <option value="r6" >RA204</option>
+                <option value="r7" >RA205</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+             <input type="radio" name="Bhall">Bani Hall <br>
+             <select name="rooms"  id="">
+               <option value="r1" disabled>Select Room#</option>
+                <option value="r2" >RB300</option>
+                <option value="r3" >RB301</option>
+                <option value="r4" >RB302</option>
+                <option value="r5" >RB303</option>
+                <option value="r6" >RB304</option>
+                <option value="r7" >RB305</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+             <input type="radio" name="Ehall">Evandy Hall <br>
+             <select name="rooms"  id="">
+               <option value="r1" disabled>Select Room#</option>
+                <option value="r2" >RE400</option>
+                <option value="r3" >RE401</option>
+                <option value="r4" >RE402</option>
+                <option value="r5" >RE403</option>
+                <option value="r6" >RE404</option>
+                <option value="r7" >RE405</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+             <input type="radio" name="LIMhall">Limman Hall <br>
+             <select name="rooms"  id="">
+              <option value="r1" disabled>Select Room#</option>
+                <option value="r2" >RL 1001</option>
+                <option value="r3" >RL 1002</option>
+                <option value="r4" >RL 1003</option>
+                <option value="r5" >RL 1004</option>
+                <option value="r6" >RL 1005</option>
+                <option value="r7" >RL 1006</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+             <input type="radio" name="KWhall">Kwapong Hall <br>
+             <select name="rooms"  id="">
+               <option value="r1" disabled>Select Room#</option>
+                <option value="r2" >RK 2001</option>
+                <option value="r3" >RK 2002</option>
+                <option value="r4" >RK 2003</option>
+                <option value="r5" >RK 2004</option>
+                <option value="r6" >RK 2005</option>
+                <option value="r7" >RK 2006</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+             <input type="radio" name="EShall">Elizabeth sey Hall <br>
+             <select name="rooms"  id="">
+               option value="r1" disabled>Select Room#</option>
+                <option value="r2" >RK 2001</option>
+                <option value="r3" >RK 2002</option>
+                <option value="r4" >RK 2003</option>
+                <option value="r5" >RK 2004</option>
+                <option value="r6" >RK 2005</option>
+                <option value="r7" >RK 2006</option>
+            </select>
+        </div>
+    </div><br>
+    <button type="button">Submit</button> --}}
