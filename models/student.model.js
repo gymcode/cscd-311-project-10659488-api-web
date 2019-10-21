@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+require("./hall.model");
 
 const studentSchema = new mongoose.Schema({
     name: {
@@ -16,7 +17,6 @@ const studentSchema = new mongoose.Schema({
     password:{
         type: String
     }
-
 });
 
 module.exports = mongoose.model('Student', studentSchema);

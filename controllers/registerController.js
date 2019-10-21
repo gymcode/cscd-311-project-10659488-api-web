@@ -28,7 +28,7 @@ router.post('/', async(req, res)=>{
         bcrypt.hash(student.password, salt, function(err, hash){
             student.password = hash;
             student.save((err, docs)=>{
-                //save dara in session 
+                //save data in session 
                
             if (err) throw err;
             res.redirect('/studentHall');

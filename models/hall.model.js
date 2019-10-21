@@ -3,16 +3,16 @@ const mongoose = require('mongoose');
 const hallSchema = new mongoose.Schema({
     
     name: {
-        type: String,
+        type: String
     },
     roomNo: {
         type: String
     },
-    studentID:{
-        type:String,
-        ref:'student'
+    studentID: {
+        type: String,
+        ref: 'Student'
     }
-    },{
+},{
     toJSON:{
         virtuals:true
     },
@@ -24,8 +24,9 @@ const hallSchema = new mongoose.Schema({
 hallSchema.virtual('users',{
     ref:'student',
     localField:'studentID',
-    foreignField:'studID',
+    foreignField:'id',
     justOne:true
 });
+
 
 module.exports = mongoose.model('Hall', hallSchema);

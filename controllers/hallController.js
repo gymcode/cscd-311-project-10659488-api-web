@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-const Hall = mongoose.model("Hall")
+const Hall = mongoose.model("Hall");
 
 router.get('/', (req, res)=>{
     res.render('student/halls', {
